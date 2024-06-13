@@ -9,7 +9,7 @@ export const Test = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); // Simulate loading time
+    }, 30000); // Simulate loading time
     return () => clearTimeout(timer);
   }, []);
 

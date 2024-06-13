@@ -1,14 +1,20 @@
 import React from "react";
 import "./Loader.css";
 
-const Loader = ({ isLoading, structure, children }: any) => {
+interface LoaderProps {
+  isLoading: boolean;
+  structure: { type: string; width: string; height: string }[];
+  children: React.ReactNode;
+}
+
+const Loader: React.FC<LoaderProps> = ({ isLoading, structure, children }) => {
   if (!isLoading) {
     return <>{children}</>;
   }
 
   return (
     <div className="loader-container">
-      {structure.map((item: any, index: any) => {
+      {structure.map((item, index) => {
         const { type, width, height } = item;
         return (
           <div
