@@ -1,8 +1,8 @@
-## For testing
+# For testing
 
 The app is live at https://react-simple-skeleton-y4w1.vercel.app/
 
-## To Run locally
+# To Run locally
 
 First, run the development server:
 
@@ -18,7 +18,11 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## My thought process
+# My thought process
+
+I am explaining below how I approached the problem
+
+### Research phase
 
 I started researching on the popular react loading skeleton components available in the internet, I was able to find many components. These are few components that inspired me.
 
