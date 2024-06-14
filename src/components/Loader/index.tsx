@@ -5,7 +5,7 @@ import classNames from "classnames";
 
 interface LoaderProps {
   loading: boolean;
-  structure: { id: string; style: React.CSSProperties }[];
+  structure: React.CSSProperties[];
   children: React.ReactNode;
   className?: string;
 }
@@ -22,8 +22,7 @@ export const Loader: React.FC<LoaderProps> = ({
 
   return (
     <div className={classNames("loader-container", className)}>
-      {structure.map((item, index) => {
-        const { style } = item;
+      {structure.map((style, index) => {
         return <div key={index} className="loader-item" style={style} />;
       })}
     </div>
