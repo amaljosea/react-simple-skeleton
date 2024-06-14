@@ -18,7 +18,7 @@ const UserTable = ({ data }: UserTableProps) => {
   );
 };
 
-export const loaderStructure = [
+const loaderStructure = [
   loaderConfig.TEXT,
   loaderConfig.TEXT,
   loaderConfig.TEXT,

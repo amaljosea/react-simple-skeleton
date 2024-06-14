@@ -5,16 +5,6 @@
   animation-fill-mode: forwards;
 }
 
-.loader-text {
-  height: 20px;
-}
-
-.loader-image {
-  height: 100px;
-  width: 100px;
-  border-radius: 8px;
-}
-
 @keyframes shimmer {
   0% {
     background-position: -200% 0;

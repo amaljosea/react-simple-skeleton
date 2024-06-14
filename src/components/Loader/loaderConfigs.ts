@@ -16,6 +16,7 @@ export const loaderConfig: LoaderConfig = {
       width: "100%",
       height: 24,
       marginTop: 10,
+      borderRadius: 10,
     },
   },
   TEXT_SMALL: {
@@ -24,6 +25,7 @@ export const loaderConfig: LoaderConfig = {
       width: "50%",
       height: 24,
       marginTop: 10,
+      borderRadius: 10,
     },
   },
   IMAGE: {
@@ -31,6 +33,7 @@ export const loaderConfig: LoaderConfig = {
     style: {
       width: 100,
       height: 100,
+      borderRadius: 100,
     },
   },
 };

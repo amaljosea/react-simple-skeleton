@@ -24,13 +24,7 @@ export const Loader: React.FC<LoaderProps> = ({
     <div className={classNames("loader-container", className)}>
       {structure.map((item, index) => {
         const { style } = item;
-        return (
-          <div
-            key={index}
-            className="loader-item"
-            style={{ borderRadius: style.height, ...style }}
-          />
-        );
+        return <div key={index} className="loader-item" style={style} />;
       })}
     </div>
   );
