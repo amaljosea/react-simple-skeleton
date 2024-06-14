@@ -5,7 +5,7 @@ import "./page.css";
 import { Poppins } from "next/font/google";
 import classNames from "classnames";
 import { useUserData } from "@/hooks/useUserData";
-import { UserCard } from "@/components/UserCard";
+import { UserCardWithLoader } from "@/components/UserCard";
 import { UserTable } from "@/components/UserTable";
 
 const roboto = Poppins({
@@ -20,7 +20,7 @@ export default function Home() {
     <main className={classNames(roboto.className, "page-container")}>
       <div>
         <h1>Basic details</h1>
-        <UserCard loading={loading} data={data} />
+        <UserCardWithLoader loading={loading} data={data} />
       </div>
       <div>
         <h1>Projects and Publications</h1>

@@ -1,17 +1,15 @@
 import React from "react";
-import Loader from "@/components/Loader";
 import Image from "next/image";
-import { loaderStructure } from "./loaderStructure";
 import { UserDataType } from "@/hooks/useUserData";
+import Loader from "@/components/Loader";
 
 type UserCardProps = {
-  loading: boolean;
   data: UserDataType;
 };
 
-export const UserCard = ({ loading, data }: UserCardProps) => {
+const UserCard = ({ data }: UserCardProps) => {
   return (
-    <Loader isLoading={loading} structure={loaderStructure}>
+    <div>
       <Image
         width={100}
         height={100}
@@ -21,6 +19,24 @@ export const UserCard = ({ loading, data }: UserCardProps) => {
       <p>{data.name}</p>
       <p>{data.title}</p>
       <p>{data.subTitle}</p>
+    </div>
+  );
+};
+
+export const loaderStructure = [
+  { type: "image", width: "100px", height: "100px" },
+  { type: "text", width: "80%", height: "20px" },
+  { type: "text", width: "60%", height: "20px" },
+  { type: "text", width: "60%", height: "20px" },
+];
+
+export const UserCardWithLoader = ({
+  loading,
+  data,
+}: UserCardProps & { loading: boolean }) => {
+  return (
+    <Loader structure={loaderStructure} isLoading={loading}>
+      <UserCard data={data} />
     </Loader>
   );
 };
