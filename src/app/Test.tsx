@@ -1,18 +1,12 @@
 "use client";
-// App.js
-import React, { useState, useEffect } from "react";
+
+import React from "react";
 import Loader from "../components/Loader";
 import Image from "next/image";
+import { useHomePageData } from "@/hooks/useHomePageData";
 
 export const Test = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 3000); // Simulate loading time
-    return () => clearTimeout(timer);
-  }, []);
+  const { loading } = useHomePageData();
 
   const structure1 = [
     { type: "image", width: "100px", height: "100px" },
