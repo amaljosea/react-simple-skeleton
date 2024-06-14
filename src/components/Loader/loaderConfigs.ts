@@ -1,4 +1,15 @@
-export const loaderConfig = {
+type SingleConfig = {
+  id: string;
+  style: React.CSSProperties;
+};
+
+type LoaderConfig = {
+  TEXT: SingleConfig;
+  TEXT_SMALL: SingleConfig;
+  IMAGE: SingleConfig;
+};
+
+export const loaderConfig: LoaderConfig = {
   TEXT: {
     id: "text",
     style: {
@@ -22,4 +33,17 @@ export const loaderConfig = {
       height: 100,
     },
   },
+};
+
+export const getCustomisedConfig = (
+  config: SingleConfig,
+  style: React.CSSProperties
+) => {
+  return {
+    ...config,
+    style: {
+      ...config.style,
+      ...style,
+    },
+  };
 };

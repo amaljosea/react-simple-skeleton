@@ -3,6 +3,7 @@ import Image from "next/image";
 import { UserDataType } from "@/hooks/useUserData";
 import { Loader, loaderConfig } from "@/components/Loader";
 import "./UserCard.css";
+import { getCustomisedConfig } from "../Loader/loaderConfigs";
 
 type UserCardProps = {
   data: UserDataType;
@@ -27,13 +28,9 @@ const UserCard = ({ data }: UserCardProps) => {
 export const loaderStructure = [
   loaderConfig.IMAGE,
   // custom style example
-  {
-    ...loaderConfig.TEXT_SMALL,
-    style: {
-      ...loaderConfig.TEXT_SMALL.style,
-      width: "20%",
-    },
-  },
+  getCustomisedConfig(loaderConfig.TEXT_SMALL, {
+    width: "20%",
+  }),
   loaderConfig.TEXT_SMALL,
   loaderConfig.TEXT_SMALL,
 ];
