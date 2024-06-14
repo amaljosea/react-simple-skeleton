@@ -1,23 +1,15 @@
 "use client";
 
-import "./page.css";
-
-import { Poppins } from "next/font/google";
-import classNames from "classnames";
 import { useUserData } from "@/hooks/useUserData";
 import { UserCardWithLoader } from "@/components/UserCard";
 import { UserTableWithLoader } from "@/components/UserTable";
-
-const roboto = Poppins({
-  weight: "400",
-  subsets: ["latin"],
-});
+import "./page.css";
 
 export default function Home() {
   const { loading, data } = useUserData();
 
   return (
-    <main className={classNames(roboto.className, "page-container")}>
+    <main className="page-container">
       <div>
         <h1>Basic details</h1>
         <UserCardWithLoader loading={loading} data={data} />

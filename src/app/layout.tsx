@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "React simple loader",
   description: "React simple loader by Amal Jose A",
 };
+
+const roboto = Poppins({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
@@ -12,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={roboto.className}>{children}</body>
     </html>
   );
 }
