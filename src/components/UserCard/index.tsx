@@ -1,12 +1,7 @@
 import React from "react";
 import Loader from "@/components/Loader";
 import Image from "next/image";
-
-const structure1 = [
-  { type: "image", width: "100px", height: "100px" },
-  { type: "text", width: "80%", height: "20px" },
-  { type: "text", width: "60%", height: "20px" },
-];
+import { loaderStructure } from "./loaderStructure";
 
 type UserCardProps = {
   loading: boolean;
@@ -14,7 +9,7 @@ type UserCardProps = {
 
 export const UserCard = ({ loading }: UserCardProps) => {
   return (
-    <Loader isLoading={loading} structure={structure1}>
+    <Loader isLoading={loading} structure={loaderStructure}>
       <div>
         <Image
           width={100}
