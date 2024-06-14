@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { UserDataType } from "@/hooks/useUserData";
 import Loader from "@/components/Loader";
+import "./UserCard.css";
 
 type UserCardProps = {
   data: UserDataType;
@@ -18,16 +19,25 @@ const UserCard = ({ data }: UserCardProps) => {
       />
       <p>{data.name}</p>
       <p>{data.title}</p>
-      <p>{data.subTitle}</p>
+      <p>{data.location}</p>
     </div>
   );
 };
 
 export const loaderStructure = [
-  { type: "image", width: "100px", height: "100px" },
-  { type: "text", width: "80%", height: "20px" },
-  { type: "text", width: "60%", height: "20px" },
-  { type: "text", width: "60%", height: "20px" },
+  {
+    id: "user-image",
+    style: {
+      width: "100px",
+      height: "100px",
+    },
+  },
+  { id: "user-name", style: { width: "80%", height: 24, marginTop: 10 } },
+  { id: "user-title", style: { width: "60%", height: 24, marginTop: 10 } },
+  {
+    id: "user-subtitle",
+    style: { width: "60%", height: 24, marginTop: 10 },
+  },
 ];
 
 export const UserCardWithLoader = ({

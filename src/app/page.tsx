@@ -10,11 +10,11 @@ export default function Home() {
 
   return (
     <main className="page-container">
-      <div>
+      <div className="item-container">
         <h1>Basic details</h1>
         <UserCardWithLoader loading={loading} data={data} />
       </div>
-      <div>
+      <div className="item-container">
         <h1>Projects and Publications</h1>
         <UserTableWithLoader loading={loading} data={data} />
       </div>

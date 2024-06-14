@@ -5,7 +5,7 @@ export type UserDataType = typeof userData;
 const userData = {
   name: "Amal Jose Alex",
   title: "Senior Frontend Engineer",
-  subTitle: "Experienced Senior Frontend Engineer Specializing in React",
+  location: "Kochi, Kerala",
   avatarUrl: "/avatar.jpg",
   projects: [
     {

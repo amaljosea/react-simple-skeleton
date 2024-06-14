@@ -4,9 +4,9 @@ import classNames from "classnames";
 
 interface LoaderProps {
   isLoading: boolean;
-  structure: { type: string; width: string; height: string }[];
+  structure: { id: string; style: React.CSSProperties }[];
   children: React.ReactNode;
-  className: string;
+  className?: string;
 }
 
 const Loader: React.FC<LoaderProps> = ({
@@ -21,13 +21,13 @@ const Loader: React.FC<LoaderProps> = ({
 
   return (
     <div className={classNames("loader-container", className)}>
-      {structure.map((item, index) => {
-        const { type, width, height } = item;
+      {structure.map((item) => {
+        const { style, id } = item;
         return (
           <div
-            key={index}
-            className={`loader-item loader-${type}`}
-            style={{ width, height }}
+            key={id}
+            className="loader-item"
+            style={{ borderRadius: style.height, ...style }}
           />
         );
       })}

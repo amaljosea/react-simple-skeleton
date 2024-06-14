@@ -17,9 +17,9 @@ const UserTable = ({ data }: UserTableProps) => {
 };
 
 export const loaderStructure = [
-  { type: "text", width: "90%", height: "20px" },
-  { type: "text", width: "70%", height: "20px" },
-  { type: "text", width: "50%", height: "20px" },
+  { id: "row1", style: { width: "90%", height: 20 } },
+  { id: "row2", style: { width: "70%", height: 20 } },
+  { id: "row3", style: { width: "50%", height: 20 } },
 ];
 
 export const UserTableWithLoader = ({
