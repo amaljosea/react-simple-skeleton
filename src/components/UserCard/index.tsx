@@ -12,17 +12,15 @@ type UserCardProps = {
 export const UserCard = ({ loading, data }: UserCardProps) => {
   return (
     <Loader isLoading={loading} structure={loaderStructure}>
-      <div>
-        <Image
-          width={100}
-          height={100}
-          src={data.avatarUrl}
-          alt={`${data.name}'s profile picture`}
-        />
-        <p>{data.name}</p>
-        <p>{data.title}</p>
-        <p>{data.subTitle}</p>
-      </div>
+      <Image
+        width={100}
+        height={100}
+        src={data.avatarUrl}
+        alt={`${data.name}'s profile picture`}
+      />
+      <p>{data.name}</p>
+      <p>{data.title}</p>
+      <p>{data.subTitle}</p>
     </Loader>
   );
 };

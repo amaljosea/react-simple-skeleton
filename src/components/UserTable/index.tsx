@@ -1,19 +1,19 @@
 import React from "react";
 import Loader from "@/components/Loader";
 import { loaderStructure } from "./loaderStructure";
+import { UserDataType } from "@/hooks/useUserData";
 
 type UserTableProps = {
   loading: boolean;
+  data: UserDataType;
 };
 
-export const UserTable = ({ loading }: UserTableProps) => {
+export const UserTable = ({ loading, data }: UserTableProps) => {
   return (
     <Loader isLoading={loading} structure={loaderStructure}>
-      <div>
-        <p>Loaded text content 1</p>
-        <p>Loaded text content 2</p>
-        <p>Loaded text content 3</p>
-      </div>
+      {data.projects.map((project) => (
+        <p key={project.name}>{project.name}</p>
+      ))}
     </Loader>
   );
 };
