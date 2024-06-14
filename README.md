@@ -46,3 +46,7 @@ I started researching on the popular react loading skeleton components available
 #### [react-native-skeleton-content](https://github.com/alexZajac/react-native-skeleton-content)
 
 - I like the way how they allows configuration
+
+### Research phase
+
+So after research I made a small working POC, as we have control of our UI components I thought of some ways for configuring them with out design system.
