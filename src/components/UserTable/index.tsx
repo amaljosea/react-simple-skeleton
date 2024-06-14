@@ -32,7 +32,7 @@ export const UserTableWithLoader = ({
     <Loader
       className="user-table-container"
       structure={loaderStructure}
-      isLoading={loading}
+      loading={loading}
     >
       <UserTable data={data} />
     </Loader>

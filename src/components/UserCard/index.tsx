@@ -46,7 +46,7 @@ export const UserCardWithLoader = ({
     <Loader
       className="user-card-container"
       structure={loaderStructure}
-      isLoading={loading}
+      loading={loading}
     >
       <UserCard data={data} />
     </Loader>

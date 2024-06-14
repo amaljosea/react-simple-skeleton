@@ -4,19 +4,19 @@ import "./Loader.css";
 import classNames from "classnames";
 
 interface LoaderProps {
-  isLoading: boolean;
+  loading: boolean;
   structure: { id: string; style: React.CSSProperties }[];
   children: React.ReactNode;
   className?: string;
 }
 
 export const Loader: React.FC<LoaderProps> = ({
-  isLoading,
+  loading,
   structure,
   children,
   className,
 }) => {
-  if (!isLoading) {
+  if (!loading) {
     return <>{children}</>;
   }
 
