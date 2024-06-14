@@ -11,16 +11,16 @@ const UserTable = ({ data }: UserTableProps) => {
   return (
     <div className="user-table-container">
       {data.projects.map((project) => (
-        <p key={project.name}>{project.name}</p>
+        <p key={project}>{project}</p>
       ))}
     </div>
   );
 };
 
 export const loaderStructure = [
-  { id: "row1", style: { width: "90%", height: 20, marginTop: 10 } },
-  { id: "row2", style: { width: "70%", height: 20, marginTop: 10 } },
-  { id: "row3", style: { width: "50%", height: 20, marginTop: 10 } },
+  { id: "row1", style: { width: "90%", height: 24, marginTop: 10 } },
+  { id: "row2", style: { width: "70%", height: 24, marginTop: 10 } },
+  { id: "row3", style: { width: "50%", height: 24, marginTop: 10 } },
 ];
 
 export const UserTableWithLoader = ({

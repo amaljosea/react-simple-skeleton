@@ -16,7 +16,7 @@ export default function Home() {
           <UserCardWithLoader loading={loading} data={data} />
         </div>
         <div className="item-container">
-          <h1 className="ellipsis">Projects and Publications</h1>
+          <h1 className="ellipsis">Projects</h1>
           <UserTableWithLoader loading={loading} data={data} />
         </div>
       </div>

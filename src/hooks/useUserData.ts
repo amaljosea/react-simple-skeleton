@@ -8,27 +8,9 @@ const userData = {
   location: "Kochi, Kerala",
   avatarUrl: "/avatar.jpg",
   projects: [
-    {
-      name: "DendroWeb",
-      scope: "Freelancing",
-      description: "Violin photo recognition",
-      skills: ["Computer Vision", "HCI", "CNN"],
-      link: "NA",
-    },
-    {
-      name: "ShapeRoute",
-      scope: "Entrepreneurship",
-      description: "Violin matching",
-      skills: ["React Native"],
-      link: "https://shaperoute.com/",
-    },
-    {
-      name: "ArmyForLife",
-      scope: "Volunteering",
-      description: "A prayer app",
-      skills: ["React Native"],
-      link: "https://play.google.com/store/apps/details?id=org.prolifearmy.spiritualadoption&hl=en_IN",
-    },
+    "DendroWeb: A research project centered on violin photo recognition, employing skills in Computer Vision, HCI, and CNN.",
+    "ShapeRoute: An entrepreneurial initiative for body photo tracking, developed with React Native.",
+    "ArmyForLife: A volunteer-driven prayer app developed using React Native.",
   ],
 };
 
