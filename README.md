@@ -22,23 +22,23 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 I started researching on the popular react loading skeleton components available in the internet, I was able to find many components. These are few components that inspired me.
 
-#### https://github.com/dvtng/react-loading-skeleton
+#### [react-loading-skeleton](https://github.com/dvtng/react-loading-skeleton)
 
 - Very popular libriary
 - Use span
 
-#### https://github.com/danilowoz/create-content-loader
+#### [create-content-loader](https://github.com/danilowoz/create-content-loader)
 
 - Use svg for the elements
 
-#### https://github.com/henrykuzmick/react-skeleton-loader
+#### [react-skeleton-loader](https://github.com/henrykuzmick/react-skeleton-loader)
 
 - Passing just the count might not be a good solution for our use case `<Skeleton count={5} />`
 
-#### https://github.com/AishwaryVishwakarma/React-Skeleton
+#### [React-Skeleton](https://github.com/AishwaryVishwakarma/React-Skeleton)
 
 - They use a nested config, which might be a complex api for the component user
 
-#### https://github.com/alexZajac/react-native-skeleton-content
+#### [react-native-skeleton-content](https://github.com/alexZajac/react-native-skeleton-content)
 
 - I like the way how they allows configuration
