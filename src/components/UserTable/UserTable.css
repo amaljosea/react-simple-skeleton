@@ -1,4 +1,4 @@
-.user-card-container {
+.user-table-container {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.user-card-container p {
+.user-table-container p {
   margin: 0px;
   text-align: center;
   margin-top: 10px;

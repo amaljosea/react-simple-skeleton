@@ -19,6 +19,8 @@ const Loader: React.FC<LoaderProps> = ({
     return <>{children}</>;
   }
 
+  console.log({ structure });
+
   return (
     <div className={classNames("loader-container", className)}>
       {structure.map((item) => {
