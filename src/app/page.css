@@ -1,14 +1,44 @@
+body {
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+}
+
 .page-container {
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
+  width: 100%;
+  height: 100%;
 }
 
-.item-container {
-  width: 50%;
+.content-container {
+  justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
+  height: 80%;
+  background-color: grey;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.item-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ellipsis {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+h1 {
+  text-align: center;
 }

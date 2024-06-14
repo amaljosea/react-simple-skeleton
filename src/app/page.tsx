@@ -10,13 +10,15 @@ export default function Home() {
 
   return (
     <main className="page-container">
-      <div className="item-container">
-        <h1>Basic details</h1>
-        <UserCardWithLoader loading={loading} data={data} />
-      </div>
-      <div className="item-container">
-        <h1>Projects and Publications</h1>
-        <UserTableWithLoader loading={loading} data={data} />
+      <div className="content-container">
+        <div className="item-container">
+          <h1 className="ellipsis">Basic details</h1>
+          <UserCardWithLoader loading={loading} data={data} />
+        </div>
+        <div className="item-container">
+          <h1 className="ellipsis">Projects and Publications</h1>
+          <UserTableWithLoader loading={loading} data={data} />
+        </div>
       </div>
     </main>
   );
