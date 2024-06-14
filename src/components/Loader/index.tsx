@@ -1,4 +1,5 @@
 import React from "react";
+import { loaderConfig } from "./loaderConfigs";
 import "./Loader.css";
 import classNames from "classnames";
 
@@ -9,7 +10,7 @@ interface LoaderProps {
   className?: string;
 }
 
-const Loader: React.FC<LoaderProps> = ({
+export const Loader: React.FC<LoaderProps> = ({
   isLoading,
   structure,
   children,
@@ -21,11 +22,11 @@ const Loader: React.FC<LoaderProps> = ({
 
   return (
     <div className={classNames("loader-container", className)}>
-      {structure.map((item) => {
-        const { style, id } = item;
+      {structure.map((item, index) => {
+        const { style } = item;
         return (
           <div
-            key={id}
+            key={index}
             className="loader-item"
             style={{ borderRadius: style.height, ...style }}
           />
@@ -35,4 +36,4 @@ const Loader: React.FC<LoaderProps> = ({
   );
 };
 
-export default Loader;
+export { loaderConfig };

@@ -1,6 +1,7 @@
 import React from "react";
-import Loader from "@/components/Loader";
+import { Loader, loaderConfig } from "@/components/Loader";
 import { UserDataType } from "@/hooks/useUserData";
+
 import "./UserTable.css";
 
 type UserTableProps = {
@@ -18,9 +19,9 @@ const UserTable = ({ data }: UserTableProps) => {
 };
 
 export const loaderStructure = [
-  { id: "row1", style: { width: "90%", height: 24, marginTop: 10 } },
-  { id: "row2", style: { width: "70%", height: 24, marginTop: 10 } },
-  { id: "row3", style: { width: "50%", height: 24, marginTop: 10 } },
+  loaderConfig.TEXT,
+  loaderConfig.TEXT,
+  loaderConfig.TEXT,
 ];
 
 export const UserTableWithLoader = ({

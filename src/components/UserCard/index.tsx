@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { UserDataType } from "@/hooks/useUserData";
-import Loader from "@/components/Loader";
+import { Loader, loaderConfig } from "@/components/Loader";
 import "./UserCard.css";
 
 type UserCardProps = {
@@ -25,19 +25,17 @@ const UserCard = ({ data }: UserCardProps) => {
 };
 
 export const loaderStructure = [
+  loaderConfig.IMAGE,
+  // custom style
   {
-    id: "user-image",
+    ...loaderConfig.TEXT_SMALL,
     style: {
-      width: 100,
-      height: 100,
+      ...loaderConfig.TEXT_SMALL.style,
+      width: "20%",
     },
   },
-  { id: "user-name", style: { width: "80%", height: 24, marginTop: 10 } },
-  { id: "user-title", style: { width: "60%", height: 24, marginTop: 10 } },
-  {
-    id: "user-subtitle",
-    style: { width: "60%", height: 24, marginTop: 10 },
-  },
+  loaderConfig.TEXT_SMALL,
+  loaderConfig.TEXT_SMALL,
 ];
 
 export const UserCardWithLoader = ({
