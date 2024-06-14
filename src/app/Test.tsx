@@ -9,7 +9,7 @@ export const Test = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 30000); // Simulate loading time
+    }, 3000); // Simulate loading time
     return () => clearTimeout(timer);
   }, []);
 
@@ -31,7 +31,7 @@ export const Test = () => {
       <Loader isLoading={loading} structure={structure1}>
         <div>
           <img
-            src="path/to/image.jpg"
+            src="avatar.jpg"
             alt="Loaded content"
             style={{ width: "100px", height: "100px", borderRadius: "8px" }}
           />
