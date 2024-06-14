@@ -1,23 +1,24 @@
-import { useEffect, useState } from "react";
+import { useFakeLoading } from "@/hooks/useFakeLoading";
 
 const userData = {
   userName: "Amal Jose Alex",
   title: "Senior Frontend Engineer",
   subTitle: "Senior Frontend Engineer",
-  projects: [{}],
+  projects: [
+    {
+      name: "DendroWeb",
+      scope: "Fulltime",
+      description: "Violin matching",
+      skills: "DendroWeb",
+      link: "DendroWeb",
+    },
+  ],
 };
 
 export const useUserData = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 3000); // Simulate loading time
-    return () => clearTimeout(timer);
-  }, []);
-
+  const { loading } = useFakeLoading();
   return {
     loading,
+    data: userData,
   };
 };

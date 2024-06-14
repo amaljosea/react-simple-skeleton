@@ -9,9 +9,9 @@ export default function Home() {
 
   return (
     <main>
-      <h1>Example 1</h1>
+      <h1>Basic details</h1>
       <UserCard loading={loading} />
-      <h1>Example 2</h1>
+      <h1>Projects and Publications</h1>
       <UserTable loading={loading} />
     </main>
   );
