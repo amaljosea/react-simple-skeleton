@@ -6,7 +6,7 @@ import { Poppins } from "next/font/google";
 import classNames from "classnames";
 import { useUserData } from "@/hooks/useUserData";
 import { UserCardWithLoader } from "@/components/UserCard";
-import { UserTable } from "@/components/UserTable";
+import { UserTableWithLoader } from "@/components/UserTable";
 
 const roboto = Poppins({
   weight: "400",
@@ -24,7 +24,7 @@ export default function Home() {
       </div>
       <div>
         <h1>Projects and Publications</h1>
-        <UserTable loading={loading} data={data} />
+        <UserTableWithLoader loading={loading} data={data} />
       </div>
     </main>
   );

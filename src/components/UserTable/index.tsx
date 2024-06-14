@@ -22,7 +22,7 @@ export const loaderStructure = [
   { type: "text", width: "50%", height: "20px" },
 ];
 
-export const UserCardWithLoader = ({
+export const UserTableWithLoader = ({
   loading,
   data,
 }: UserTableProps & { loading: boolean }) => {
