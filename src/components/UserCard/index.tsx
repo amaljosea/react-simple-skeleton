@@ -17,9 +17,9 @@ const UserCard = ({ data }: UserCardProps) => {
         src={data.avatarUrl}
         alt={`${data.name}'s profile picture`}
       />
-      <p className="ellipsis">{data.name}</p>
-      <p className="ellipsis">{data.title}</p>
-      <p className="ellipsis">{data.location}</p>
+      <p>{data.name}</p>
+      <p>{data.title}</p>
+      <p>{data.location}</p>
     </div>
   );
 };

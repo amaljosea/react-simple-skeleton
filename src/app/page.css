@@ -14,10 +14,6 @@ body {
 }
 
 .content-container {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 80%;
   height: 80%;
   border-radius: 20px;
@@ -33,11 +29,8 @@ body {
   align-items: center;
 }
 
-.ellipsis {
+.content {
   width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .page-container h1 {
