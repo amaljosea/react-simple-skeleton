@@ -18,9 +18,9 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Current implementation details
+## My thought process
 
-## Previous implementations
+There are lot of other
 
 - https://github.com/dvtng/react-loading-skeleton
 - https://github.com/danilowoz/create-content-loader
