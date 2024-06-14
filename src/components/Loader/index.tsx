@@ -1,7 +1,6 @@
 import React from "react";
 import { loaderConfig } from "./loaderConfigs";
 import "./Loader.css";
-import classNames from "classnames";
 
 interface LoaderProps {
   loading: boolean;
@@ -21,7 +20,7 @@ export const Loader: React.FC<LoaderProps> = ({
   }
 
   return (
-    <div className={classNames("loader-container", className)}>
+    <div className={className}>
       {structure.map((style, index) => {
         return <span key={index} className="loader-item" style={style} />;
       })}
