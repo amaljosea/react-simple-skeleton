@@ -9,7 +9,7 @@ type UserCardProps = {
 
 const UserCard = ({ data }: UserCardProps) => {
   return (
-    <div>
+    <div className="user-card-container">
       <Image
         width={100}
         height={100}
@@ -35,7 +35,11 @@ export const UserCardWithLoader = ({
   data,
 }: UserCardProps & { loading: boolean }) => {
   return (
-    <Loader structure={loaderStructure} isLoading={loading}>
+    <Loader
+      className="user-card-container"
+      structure={loaderStructure}
+      isLoading={loading}
+    >
       <UserCard data={data} />
     </Loader>
   );
