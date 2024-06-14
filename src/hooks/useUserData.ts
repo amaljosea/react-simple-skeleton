@@ -1,16 +1,33 @@
 import { useFakeLoading } from "@/hooks/useFakeLoading";
 
+export type UserDataType = typeof userData;
+
 const userData = {
-  userName: "Amal Jose Alex",
+  name: "Amal Jose Alex",
   title: "Senior Frontend Engineer",
-  subTitle: "Senior Frontend Engineer",
+  subTitle: "Experienced Senior Frontend Engineer Specializing in React",
+  avatarUrl: "/avatar.jpg",
   projects: [
     {
       name: "DendroWeb",
-      scope: "Fulltime",
+      scope: "Freelancing",
+      description: "Violin photo recognition",
+      skills: ["Computer Vision", "HCI", "CNN"],
+      link: "NA",
+    },
+    {
+      name: "ShapeRoute",
+      scope: "Entrepreneurship",
       description: "Violin matching",
-      skills: "DendroWeb",
-      link: "DendroWeb",
+      skills: ["React Native"],
+      link: "https://shaperoute.com/",
+    },
+    {
+      name: "ArmyForLife",
+      scope: "Volunteering",
+      description: "A prayer app",
+      skills: ["React Native"],
+      link: "https://play.google.com/store/apps/details?id=org.prolifearmy.spiritualadoption&hl=en_IN",
     },
   ],
 };
