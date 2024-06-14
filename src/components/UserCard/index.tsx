@@ -26,7 +26,7 @@ const UserCard = ({ data }: UserCardProps) => {
 
 export const loaderStructure = [
   loaderConfig.IMAGE,
-  // custom style
+  // custom style example
   {
     ...loaderConfig.TEXT_SMALL,
     style: {
