@@ -1,11 +1,11 @@
 "use client";
 
-import { useHomePageData } from "@/hooks/useHomePageData";
+import { useUserData } from "@/hooks/useUserData";
 import { UserCard } from "@/components/UserCard";
 import { UserTable } from "@/components/UserTable";
 
 export default function Home() {
-  const { loading } = useHomePageData();
+  const { loading } = useUserData();
 
   return (
     <main>

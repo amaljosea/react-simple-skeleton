@@ -1,6 +1,13 @@
 import { useEffect, useState } from "react";
 
-export const useHomePageData = () => {
+const userData = {
+  userName: "Amal Jose Alex",
+  title: "Senior Frontend Engineer",
+  subTitle: "Senior Frontend Engineer",
+  projects: [{}],
+};
+
+export const useUserData = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
