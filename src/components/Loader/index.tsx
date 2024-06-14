@@ -23,7 +23,7 @@ export const Loader: React.FC<LoaderProps> = ({
   return (
     <div className={classNames("loader-container", className)}>
       {structure.map((style, index) => {
-        return <div key={index} className="loader-item" style={style} />;
+        return <span key={index} className="loader-item" style={style} />;
       })}
     </div>
   );
