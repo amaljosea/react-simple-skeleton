@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Loader from "../components/Loader/Loader";
+import Loader from "../components/Loader";
 import Image from "next/image";
 import { useHomePageData } from "@/hooks/useHomePageData";
 
