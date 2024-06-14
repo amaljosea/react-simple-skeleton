@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 
 export const metadata: Metadata = {
-  title: "React simple loader",
-  description: "React simple loader by Amal Jose A",
+  title: "React skeleton loader example",
+  description: "React skeleton loader example by Amal Jose A",
 };
 
 const roboto = Poppins({
