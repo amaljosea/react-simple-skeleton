@@ -28,8 +28,8 @@ export const loaderStructure = [
   {
     id: "user-image",
     style: {
-      width: "100px",
-      height: "100px",
+      width: 100,
+      height: 100,
     },
   },
   { id: "user-name", style: { width: "80%", height: 24, marginTop: 10 } },
