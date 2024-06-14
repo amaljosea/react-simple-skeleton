@@ -27,7 +27,6 @@ const UserCard = ({ data }: UserCardProps) => {
 
 export const loaderStructure = [
   loaderConfig.IMAGE,
-  // custom style example
   getCustomisedConfig(loaderConfig.TEXT_SMALL, {
     width: "20%",
   }),
