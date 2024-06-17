@@ -18,6 +18,6 @@ export const useUserData = () => {
   const { loading } = useFakeLoading();
   return {
     loading,
-    data: loading ? undefined : userData,
+    data: userData,
   };
 };
