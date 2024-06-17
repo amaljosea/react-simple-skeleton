@@ -1,8 +1,12 @@
-# For testing
+## About
+
+This is a [next.js](https://nextjs.org/) project which demos a custom react loader component. More details about the loader component can be found in `src/components/Loader`.
+
+## For testing
 
 The app is live at https://react-simple-skeleton-y4w1.vercel.app/
 
-# To Run locally
+## To Run locally
 
 First, run the development server:
 
@@ -17,3 +21,5 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Walkthough
