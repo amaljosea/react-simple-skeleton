@@ -1,37 +1,33 @@
-I started the development of the componennt by observing various previous implemntation of the loading skeeleton components in react.
-
-I found many intresting libriaries, bewlow are those libriaries with the points noted.
+I began developing the component by reviewing various previous implementations of loading skeleton components in React. During my research, I discovered several interesting libraries, which I noted down:
 
 #### [react-loading-skeleton](https://github.com/dvtng/react-loading-skeleton)
 
-- Very popular libriary
-- Use span
+- Very popular library
+- Uses `span` elements
 
 #### [create-content-loader](https://github.com/danilowoz/create-content-loader)
 
-- Use svg for the elements
+- Uses `svg` elements
 
 #### [react-skeleton-loader](https://github.com/henrykuzmick/react-skeleton-loader)
 
-- Passing just the count might not be a good solution for our use case `<Skeleton count={5} />`
+- Passing just the count might not be suitable for our use case (`<Skeleton count={5} />`)
 
 #### [React-Skeleton](https://github.com/AishwaryVishwakarma/React-Skeleton)
 
-- They use a nested config, which might be a complex api for the component user
+- Uses a nested config, which might be too complex for users of the component
 
 #### [react-native-skeleton-content](https://github.com/alexZajac/react-native-skeleton-content)
 
-- I like the way how they allows configuration
+- I appreciate how it allows for flexible configuration
 
-After the initial research I started thinking about the core implementation.
+After this initial research, I started considering the core implementation of our component.
 
-- I wanted to make the api very simple for developers to understand and use.
-- I want the api to be configurable in all the scenarios.
+- I aimed to make the API very simple for developers to understand and use.
+- I wanted the API to be configurable for various scenarios.
 
-I choose to render various span elements insider our component to mimic the loading elements. Also the elements inside the loader will be using css animations to have the aimations so that they are performant and works on all devices easliy. Also I choose background position based animation so that all the elements will get the animation uniformly.
+I decided to render various `span` elements within our component to mimic the loading elements. The elements inside the loader will use CSS animations to ensure performance and compatibility across all devices. By using background position-based animation, all elements will receive a uniform animation effect.
 
-The core Loader component allows to render any struncture, it just loops throught the configuration and renders the elements, the positioniong logic can be controlled from outside of the component which can be resued by configuration.
+The core Loader component can render any structure by looping through the configuration and rendering the elements. The positioning logic can be controlled externally, making it reusable through configuration.
 
-My idea is that whenevery the app's design system is made or new components are made the structure of the loading skeleton is also decided.
-
-So the loader structure is placed very closely with each comppoent. So that developers will not duplicate the loader structure in multiple places.
+My idea is that whenever the app's design system or new components are developed, the structure of the loading skeleton should also be defined. This way, the loader structure is closely aligned with each component, preventing developers from duplicating the loader structure in multiple places.
