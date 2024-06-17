@@ -23,3 +23,5 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Walkthough
+
+https://www.loom.com/share/2fa6c5a3920740d58438223842800be0
