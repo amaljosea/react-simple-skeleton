@@ -2,13 +2,13 @@ import React from "react";
 import { Loader, loaderConfig } from "@/components/Loader";
 import { UserDataType } from "@/hooks/useUserData";
 
-import "./UserTable.css";
+import "./UserDetails.css";
 
-type UserTableProps = {
+type UserDetailsProps = {
   data: UserDataType;
 };
 
-const UserTable = ({ data }: UserTableProps) => {
+const UserDetails = ({ data }: UserDetailsProps) => {
   return (
     <div className="user-table-container">
       {data.projects.map((project) => (
@@ -24,17 +24,17 @@ const loaderStructure = [
   loaderConfig.TEXT,
 ];
 
-export const UserTableWithLoader = ({
+export const UserDetailsWithLoader = ({
   loading,
   data,
-}: UserTableProps & { loading: boolean }) => {
+}: UserDetailsProps & { loading: boolean }) => {
   return (
     <Loader
       className="user-table-container"
       structure={loaderStructure}
       loading={loading}
     >
-      <UserTable data={data} />
+      <UserDetails data={data} />
     </Loader>
   );
 };

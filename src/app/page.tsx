@@ -2,7 +2,7 @@
 
 import { useUserData } from "@/hooks/useUserData";
 import { UserCardWithLoader } from "@/components/UserCard";
-import { UserTableWithLoader } from "@/components/UserTable";
+import { UserDetailsWithLoader } from "@/components/UserDetails";
 import "./page.css";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
         </div>
         <div className="item-container">
           <h1>Projects</h1>
-          <UserTableWithLoader loading={loading} data={data} />
+          <UserDetailsWithLoader loading={loading} data={data} />
         </div>
       </div>
     </main>
